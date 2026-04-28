@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patto Passes Driving School</title>
+  <meta
+    name="description"
+    content="Manual driving lessons in Stoke-on-Trent and surrounding areas with a calm, patient instructor."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">🚗 Driving lessons in Stoke-on-Trent — start your journey today 🚗</div>
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top">
+        <img class="brand-logo" src="logo.jpg" alt="Patto Passes Driving School logo" />
+        <span>Patto Passes</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#lessons">Lessons</a>
+        <a href="#availability">Availability</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#booking">Book now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Manual driving lessons</p>
+        <h1>Calm, patient driving lessons built around you.</h1>
+        <p>
+          Friendly and professional driving lessons designed to help learners become safe,
+          confident drivers and pass their test.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#booking">Check availability</a>
+          <a class="button button-secondary" href="#contact">Send a message</a>
+        </div>
+      </div>
+
+      <div class="preview-logo-card">
+        <img src="logo.jpg" alt="Patto Passes Driving School branding" />
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Benefits">
+      <div class="stat">Patient instructor</div>
+      <div class="stat">Manual lessons</div>
+      <div class="stat">Flexible times</div>
+      <div class="stat">Local areas</div>
+    </section>
+
+    <section id="lessons" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Who this is for</p>
+        <h2>Lessons for beginners, nervous learners, and test preparation.</h2>
+        <p>Learn at a pace that works for you with structured, supportive lessons.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🚗</div>
+          <h3>Complete beginners</h3>
+          <p>Start from the basics with clear, step-by-step instruction.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">✅</div>
+          <h3>Nervous learners</h3>
+          <p>Build road confidence in a calm and relaxed learning environment.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🛣️</div>
+          <h3>Test ready</h3>
+          <p>Prepare for your driving test with structured lessons and focused practice.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="feature-card">
+        <p class="eyebrow">Why choose Patto Passes</p>
+        <h2>Safe driving for life, not just test day.</h2>
+
+        <ul>
+          <li>Patient and supportive instructor</li>
+          <li>Manual driving lessons</li>
+          <li>Flexible lesson times</li>
+          <li>Structured lessons to help you progress quickly</li>
+          <li>Friendly and relaxed learning environment</li>
+        </ul>
+      </div>
+
+      <div class="area-card">
+        <p class="eyebrow">Areas covered</p>
+        <h2>Stoke-on-Trent and surrounding areas.</h2>
+        <p>
+          Covering <strong>Stoke-on-Trent, Newcastle-under-Lyme, Hanley, Burslem,
+          Longton, Tunstall</strong> and nearby areas.
+        </p>
+      </div>
+    </section>
+
+    <section id="availability" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Availability preview</p>
+        <h2>Example booking system preview.</h2>
+        <p>This is a front-end preview only. The database and real booking storage can be added later.</p>
+      </div>
+
+      <div id="booking" class="booking-grid">
+        <aside class="panel">
+          <h3>Available lesson slots</h3>
+
+          <div class="slot-list">
+            <button class="slot selected" type="button" data-slot="Monday at 9:00 AM">
+              <span>Monday</span>
+              <small>9:00 AM</small>
+            </button>
+
+            <button class="slot" type="button" data-slot="Monday at 11:30 AM">
+              <span>Monday</span>
+              <small>11:30 AM</small>
+            </button>
+
+            <button class="slot" type="button" data-slot="Tuesday at 2:00 PM">
+              <span>Tuesday</span>
+              <small>2:00 PM</small>
+            </button>
+
+            <button class="slot" type="button" data-slot="Wednesday at 10:00 AM">
+              <span>Wednesday</span>
+              <small>10:00 AM</small>
+            </button>
+
+            <button class="slot" type="button" data-slot="Friday at 1:30 PM">
+              <span>Friday</span>
+              <small>1:30 PM</small>
+            </button>
+          </div>
+        </aside>
+
+        <div class="panel">
+          <h3>Request a lesson</h3>
+          <p class="selected-preview" id="selectedSlot">Selected slot: Monday at 9:00 AM</p>
+
+          <form id="bookingForm">
+            <label for="name">Full name</label>
+            <input id="name" type="text" placeholder="Your name" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" type="tel" placeholder="Your phone number" required />
+
+            <label for="email">Email address</label>
+            <input id="email" type="email" placeholder="you@example.com" required />
+
+            <label for="level">Experience level</label>
+            <select id="level" required>
+              <option value="">Select one</option>
+              <option>Complete beginner</option>
+              <option>Nervous learner</option>
+              <option>Some experience</option>
+              <option>Test preparation</option>
+              <option>Refresher lesson</option>
+            </select>
+
+            <label for="notes">Notes</label>
+            <textarea
+              id="notes"
+              rows="4"
+              placeholder="Tell me your goals, preferred times, or test date."
+            ></textarea>
+
+            <button class="button button-primary" type="submit">Send booking request</button>
+
+            <div class="success-box" id="bookingNotice" hidden>
+              Preview only: this booking would be sent once the website is connected.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="contact-card">
+        <p class="eyebrow">Contact</p>
+        <h2>Ready to start your driving journey?</h2>
+        <p>Send a message to check availability, ask a question, or book your first lesson.</p>
+        <a class="button button-secondary" href="mailto:hello@example.com">Message Patto Passes</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Patto Passes Driving School. Let’s get you on the road 🚗</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
